@@ -1,71 +1,120 @@
-# 🧿 Eye Clinic Management System
+# 👁️ Web-Based Eye Clinic Management System
 
-A web-based eye clinic management system built with Laravel, tailored for eye clinics. It includes features such as:
+![TwoLabs Optics Logo](public/favicon.png)
 
-- 📅 Appointment Scheduling
-- 🛍️ Optical Product Catalog
-- 🛒 Cart and Checkout
-- 🧑‍⚕️ Admin Dashboard
-- 📬 Automated Email Notifications
+This project is a user-friendly, web-based management system designed specifically for **eye clinics**. Built using the **Laravel PHP framework**, the application helps streamline daily operations such as **booking appointments**, **managing product inventory**, **processing orders**, and **communicating with patients**.
 
-This system is designed to help clinics streamline operations, improve customer service, and modernize their service delivery.
+The system was developed as part of our Bachelor’s degree final year project at **Lincoln University College**, with a real-world use case from **TwoLabs Optics**.
 
-## ⚙️ Technologies Used
+---
 
-- Laravel (PHP)
-- MySQL
-- Bootstrap 5
-- Blade Templating Engine
-- JavaScript
-- Monnify API (test integration)
-- XAMPP (local development server)
+## 🚀 What the System Can Do
 
-## 📂 Project Structure
+✅ **Browse Optical Products** – Glasses, lenses, frames, and more  
+✅ **Book Appointments** – Select preferred dates and times  
+✅ **Cart and Checkout** – Add products, simulate payments, place orders  
+✅ **Admin Dashboard** – View all bookings and manage orders/products  
+✅ **Email Alerts** – Get notified when bookings or orders are confirmed  
+✅ **Authentication** – Secure login for users and admins
 
-```
-├── app/
-├── routes/
-├── resources/views/
-├── public/
-├── database/migrations/
-└── .env.example
-```a
+---
 
-## 🚀 How to Run Locally
+## 🛠️ Technologies Used
 
-1. Clone the repository:
+- **Laravel** (PHP framework)
+- **MySQL** (Relational Database)
+- **Bootstrap 5** (For responsive design)
+- **Blade** (Laravel's templating engine)
+- **JavaScript** (Client-side interactivity)
+- **Monnify API** (Test-mode payment integration)
+- **XAMPP** (Local server environment)
+
+---
+
+## 🧪 How to Set It Up
+
+### Prerequisites
+- PHP 8+
+- Composer
+- MySQL/MariaDB
+- Node.js and NPM
+- Git
+
+### Setup Instructions
 ```bash
-git clone https://github.com/your-username/eye-clinic-system.git
-cd eye-clinic-system
-```
+# Clone the repo
+git clone https://github.com/your-username/eye-clinic-management.git
+cd eye-clinic-management
 
-2. Install dependencies:
-```bash
+# Install dependencies
 composer install
-npm install && npm run dev
-```
 
-3. Setup environment:
-```bash
+# Set up environment
 cp .env.example .env
 php artisan key:generate
-```
 
-4. Run migrations:
-```bash
+# Configure your database in the .env file
 php artisan migrate --seed
-```
 
-5. Start development server:
-```bash
+# Install frontend dependencies
+npm install && npm run dev
+
+# Start the application
 php artisan serve
 ```
 
-## 🧑‍💻 Developers
+---
 
-- Adam Sani
-- Abdallah Abdulrahman
+## 📸 Screenshots
 
-Under the supervision of Mr. Umar Shehu Abdulwahab,  
-Department of Computer Science,  
-Lincoln College of Science, Management and Technology, Kano.
+| Page | Description |
+|------|-------------|
+| ![User Dashboard](public/assets/images/User_Dashboard.PNG) | View appointments, orders, and notifications |
+| ![Product Catalog](public/assets/images/Product_Catalog.PNG) | Browse products and add to cart |
+| ![Admin Dashboard](public/assets/images/Admin_Dashboard.PNG) | Manage products, bookings, and orders |
+| ![Appointment Form](public/assets/images/Appointment_Form.PNG) | Book an appointment with your optometrist |
+
+> 🖼️ **Add your screenshots in the `/screenshots` folder.**
+
+---
+
+## 📂 Project Structure (Simplified)
+
+```
+├── app/                  # Backend logic
+├── routes/               # Web routes
+├── resources/views/      # Blade templates
+├── public/               # Assets and entry point
+├── database/migrations/  # DB structure
+├── .env.example          # Environment config template
+```
+
+---
+
+## 👨‍🎓 Developed By
+
+- **Adam Sani**  
+- **Abdallah Abdulrahman**
+
+🎓 **Bachelor’s Degree in Computer Science**  
+**Lincoln University College**
+
+---
+
+## 🎓 Supervised By
+
+**Mr. Umar Shehu Abdulwahab**  
+Department of Computer Science  
+Lincoln University College
+
+---
+
+## 📬 Special Thanks
+
+This project is based on a real-world case study of **TwoLabs Optics**, an eye clinic committed to digital transformation in healthcare. We thank them for their cooperation, support, and practical insights throughout the development process.
+
+---
+
+## 📃 License
+
+This project is intended for academic purposes. Feel free to adapt and extend it with credit.
